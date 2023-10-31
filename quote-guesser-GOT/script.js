@@ -1,7 +1,7 @@
 // get random quote
 // https://api.gameofthronesquotes.xyz/v1/random
 
-const choices = [];
+let choices = null;
 // array of objects{name, slug}. sort by slug and place in document
 let correctChoice = null;
 
@@ -12,6 +12,12 @@ fetch("https://api.gameofthronesquotes.xyz/v1/random/3")
         console.log(data)
         correctChoice = data[0];
         document.querySelector('blockquote').innerText = correctChoice.sentence;
+
+        choices = data.map(x => x.character.name);
+        choices.sort();
+        document.querySelectorAll('label.user-choice').forEach((x, i) => {
+            x.querySelector('span').innerText = choices[i];
+        });
     })
     .catch(err => console.error(err));
 
