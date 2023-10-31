@@ -1,6 +1,8 @@
 Assignment for [100Devs](https://leonnoel.com/100devs/). Might as well have fun while doing this.
 
 - [ ] use simplest technique possible (e.g: forms, checkboxes instead of javascript). just get it working and move on
+- [ ] (optional) organize this into table
+- [ ] deploy to github pages (can just create gh-pages branch? idk)
 
 ## Rough ideas for what I'll make:
 *final implementtion might be a little different*
