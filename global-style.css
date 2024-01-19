@@ -1,0 +1,28 @@
+body {
+    background: #40445a;
+}
+
+button {
+    display: block;
+    width: 100%;
+}
+img {
+    height: 60dvh;
+}
+
+body,
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+.center-container {
+    position: relative;
+}
+.caption {
+    position: absolute;
+    bottom: 2em;
+    color: white;
+}
